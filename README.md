@@ -14,7 +14,7 @@ LangLogicLab 是一个旨在简化使用和研究大型语言模型（LLM）的P
 
 ### 先决条件
 
-确保你的机器上安装了Python（建议使用最新版本）。如果你没有安装Python，可以从 [Python官网](https://www.python.org/) 下载并安装。
+确保你的机器上安装了Python（建议使用最新版本）。如果你没有安装Python，可以从 [Python官网](https://www.python.org/) 下载并安装。请注意，本程序仅在Python 11上进行过测试，对于其他版本的Python，我们不能保证其完全兼容性，可能会出现未知的问题。
 
 ### 安装
 
