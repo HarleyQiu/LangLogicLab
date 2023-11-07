@@ -26,7 +26,7 @@ from langchain.llms import OpenAI
 
 # 初始化WebBaseLoader，将指定的URL作为参数
 # 这个URL是Lilian Weng的博客，关于"agent"的一个帖子
-loader = WebBaseLoader("https://lilianweng.github.io/posts/2023-06-23-agent/")
+loader = WebBaseLoader("https://zhuanlan.zhihu.com/p/74994510")
 # 使用loader加载文档，这里的文档是指上面URL中的内容
 documents = loader.load()
 
@@ -47,7 +47,7 @@ docsearch = Chroma.from_documents(texts, embeddings)
 qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=docsearch.as_retriever())
 
 # 定义一个查询问题："详细告诉我什么是任务分解？"
-query = "Tell me in detail what task decomposition is?"
+query = "什么是大数据分析?"
 # 执行查询，qa系统会在文档中检索信息并生成答案
 answer = qa.run(query)
 print(answer)
